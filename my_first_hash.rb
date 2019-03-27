@@ -1,5 +1,13 @@
+
+
 def my_hash
   # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
+
+  describe "#my_hash" do
+    it "uses the literal constructor to create a hash that contains key/value pairs" do 
+      expect(my_hash).to be_a(Hash)
+      expect(my_hash.keys.count).to_not eq(0)
+    end
 
   
 end
